@@ -4,6 +4,7 @@ const postSchema = new mongoose.Schema({
   content: { type: String, required: true },
   author: { type: String, default: 'Anonymous' },
   category: { type: String, default: 'General' },
+  image: { type: String },
   date: { type: Date, default: Date.now }
 });
 module.exports = mongoose.model('Post', postSchema);
